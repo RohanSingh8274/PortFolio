@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+  <!-- Title: add your Portfolio websites's title here -->
+  <title>Rohan | Developer</title>
+
+  <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+  <meta name="keywords" content="[username], [name], skill" />
+
+  <!-- Improve your SEO by adding a small descrption of you -->
+  <meta name="description" content="[Your name here] | Developer" />
+
+  <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+  <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+
+  <!-- Add your primary-theme color for the value of content -->
+  <meta name="theme-color" content="#36d1dc" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <!-- Fill content with the URL of this portfolio you'll host -->
+  <meta property="og:url" content="https://devfolio.js.org/" />
+  <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+  <meta property="og:title" content="[Your name here] | Developer" />
+  <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+  <meta property="og:description" content="Made using DevFolio Template" />
+  <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+  <meta property="og:image" content="https://devfolio.js.org/assets/devfolio.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <!-- Again fill content attr with the URL of this portfolio you'll host -->
+  <meta property="twitter:url" content="https://devfolio.js.org" />
+  <!-- Recommended to use the same text used within <title> element -->
+  <meta property="twitter:title" content="[Your name here] | Developer" />
+  <!-- short description that shows up while your portfolio is shared -->
+  <meta property="twitter:description" content="Made using DevFolio Template" />
+  <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+  <meta property="twitter:image" content="https://anilseervi.vercel.app/assets/devfolio.png" />
+
+  <!-- Bootstrap 4.0 Cdn  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- link tags -->
+  <link rel="preload" as="style" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <!-- FontAwesome Icons link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="./javascript/scrollreveal.min.js"></script>
+  <script defer type="text/javascript" src="./javascript/scrollveal.js"></script>
+
+  <!-- Remove Google Analytics once you have your portfolio website set-up -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag("js", new Date())
+
+    gtag("config", "UA-122228201-4")
+  </script>
+  <!-- End of Google Analytics -->
+</head>
+
+<body class="light-mode">
+  <header id="header">
+    <div class="Navbar">
+      <div class="nav-container">
+        <div class="nav">
+          <div class="image nav-logo">
+            <img src="assets/r-purple.png" alt="">
+          </div>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="nav-links">
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Skills</a></li>
+              <li><a href="">Projects</a></li>
+              <li><a href="">Connect</a></li>
+              <li>
+                <label class="switch">
+                  <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b">
+                          <circle r="5" cy="12" cx="12"></circle>
+                          <path
+                            d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                          </path>
+                        </g></svg></span>
+                  <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path
+                          d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                        </path></svg></span>
+                  <input type="checkbox" class="input" id="theme-toggler">
+                  <span class="slider"></span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div id="hero">
+    <section class="container">
+      <h1 class="hero-title">
+        Hi, my name is <span class="text-color-main name">Rohan Singh</span>
+        <br />
+        I'm the Full-stack Developer.
+      </h1>
+      <p class="hero-cta">
+        <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+      </p>
+    </section>
+    <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+      <div class="scroll-down"></div>
+    </a>
+    <hr />
+    <div class="social-links">
+      <a href="#!" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="#!" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="#!" target="_blank" rel="noopener noreferrer" aria-label="codepen">
+        <i class="fa-brands fa-codepen"></i>
+      </a>
+      <a href="#!" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="#!" target="_blank" rel="noopener noreferrer" aria-label="github">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+  </div>
+  <!-- /END Hero Section -->
+
+  <!-- About Section -->
+  <div class="pre-wrapper">
+    <div id="about" class="light-container-purple">
+      <section class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img class="img-fluid" src="./assets/img/personal/profile.jpg" alt="Profile Image" width="450"
+              height="350" />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              I have 1 years of experience and a deep understanding of various web technologies such as HTML, CSS,
+              JavaScript, TypeScript, MERN, Drupal and React.
+              I am dedicated to keeping up with the latest trends and techniques in web development, and I am constantly
+              learning and expanding my skill set. I have a keen eye for detail and strive for perfection in every
+              project
+              I work on.
+
+            </p>
+            <p class="about-wrapper__info-text">
+              When I'm not coding, I enjoy exploring new technologies and work on side projects. I am a sports
+              enthusiast. I play basketball and go to practice regularly. I am also a big cricket fan and my favourite
+              player is Virat Kohli.
+            </p>
+            <span class="about-wrapper__cta">
+              <a href="#" class="cta-btn cta-btn--resume">View Resume</a>
+            </span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- /END About Section -->
+
+  <!-- Skills Section  -->
+  <div id="skills">
+    <section class="container">
+      <!-- <div class="container"> -->
+      <h2 class="section-title section-text-dark">Skills</h2>
+      <!-- <h4 class="section-title">My tech stack</h4> -->
+      <div class="skills__container container grid">
+        <div class="skills__container-box section-title">
+          <img class="skills__container-img" src="/assets/img/skills/html.svg" alt="HTML5" />
+          <div class="skills__container-name section-text-dark">HTML5</div>
+        </div>
+
+        <div class="skills__container-box section-title">
+          <img class="skills__container-img" src="/assets/img/skills/css.svg" alt="css" />
+          <div class="skills__container-name section-text-dark">CSS</div>
+        </div>
+
+        <div class="skills__container-box section-title">
+          <img class="skills__container-img" src="/assets/img/skills/javascript.svg" alt="javascript" />
+          <div class="skills__container-name section-text-dark">Javascript</div>
+        </div>
+
+        <div class="skills__container-box section-title">
+          <img class="skills__container-img" src="/assets/img/skills/react.svg" alt="reactjs" />
+          <div class="skills__container-name section-text-dark">React Js</div>
+        </div>
+
+        <div class="skills__container-box section-title">
+          <img class="skills__container-img" src="/assets/img/skills/nodejs.svg" alt="nodejs" />
+          <div class="skills__container-name section-text-dark">Node JS</div>
+        </div>
+
+        <div class="skills__container-box section-title">
+          <img class="skills__container-img" src="/assets/img/skills/php.svg" alt="php" />
+          <div class="skills__container-name section-text-dark">PHP</div>
+        </div>
+
+        <div class="skills__container-box section-title">
+          <img class="skills__container-img" src="/assets/img/skills/drupal.png" alt="symfony" />
+          <div class="skills__container-name section-text-dark">Drupal</div>
+        </div>
+
+        <div class="skills__container-box section-title">
+          <img class="skills__container-img" src="/assets/img/skills/sass.svg" alt="sass" />
+          <div class="skills__container-name section-text-dark">SASS</div>
+        </div>
+        <div class="skills__container-box section-title">
+          <img class="skills__container-img" src="/assets/img/skills/hostinger.png" alt="hostinger" />
+          <div class="skills__container-name section-text-dark">Hostinger</div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+  </div>
+  <!-- End Skills Section  -->
+
+  <!-- Experience Section  -->
+  <div class="pre-wrapper">
+    <div id="qualification">
+      <section class="container">
+        <h2 class="section-title">Qualifications</h2>
+        <!-- Tabs for switching between Education and Experience -->
+        <div class="qualification__tabs">
+          <div class="qualification__button button--flex qualification__active" data-target="#education"
+            id="education-tab">
+            <a href="#qualification" class="cta-btn cta-btn--resume">Education</a>
+          </div>
+          <div class="qualification__button button--flex" data-target="#experience" id="experience-tab">
+            <a href="#qualification" class="cta-btn cta-btn--resume">Experience</a>
+          </div>
+        </div>
+
+        <!-- Education Timeline (default visible) -->
+        <div class="timeline" id="education" style="display: block;">
+          <div class="containers left">
+            <div class="content">
+              <h3>CBSE, Science</h3>
+              <p>National High School</p>
+              <p>2017-2019, Percentage- 74.6</p>
+            </div>
+          </div>
+          <div class="containers right">
+            <div class="content">
+              <h3>B.tech in Computer Science</h3>
+              <p>Calcutta Institute Of Engineering And Management</p>
+              <p>2019-2024, CGPA- 9.01</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Timeline (hidden by default) -->
+        <div class="timeline" id="experience" style="display: none;">
+          <div class="containers left">
+            <div class="content">
+              <h2>Innoraft</h2>
+              <p>2023 - Now</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- End Experience Section -->
+
+  <!--Projects Section-->
+  <div id="projects">
+    <section class="container">
+      <div>
+        <div class="project-wrapper">
+          <h2 class="section-title section-text-dark">Projects</h2>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/project.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/project.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/project.png" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+
+          <!--  -->
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- End Projects Section -->
+
+  <!-- Contact Section -->
+  <div class="pre-wrapper">
+    <div id="contact">
+      <section class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">I would love to chat with you about your project and see how we can work
+            together to create something truly amazing. Let's connect.</p>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rohansingh8274@gmail.com" target="_blank"
+            class="cta-btn cta-btn--resume">Connect</a>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- END Contact Section -->
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <a href="#header" class="back-to-top" aria-label="go back to top">
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      </a>
+
+
+      <p class="footer__text">
+        &copy; <span id="year"></span> - Made by
+        <a href="https://github.com/AnilSeervi" target="_blank" rel="noopener noreferrer">Rohan Singh with &hearts;
+        </a>
+      </p>
+    </div>
+  </footer>
+  <!-- END Footer Section -->
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear()
+  </script>
+  <!-- bootstrap js  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="./javascript/vanilla-tilt.min.js"></script>
+  <script type="text/javascript" src="./javascript/valtilt.js"></script>
+</body>
+
+</html>
