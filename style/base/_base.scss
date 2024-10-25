@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pre-wrapper {
+  background: var(--first-color);
+}
+
+.light-mode {
+  // white background.
+  --first-color: #fafafa;
+  --menu-link-color: #333333;
+  // For white background, purple text.
+  --first-text-color: #333333;
+  --scroll-color: #901169;
+  --utility-color: #901169;
+  // dark background.
+  --second-color: linear-gradient(52deg, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);
+  // dark background , white text.
+  --second-text-color: #fafafa;
+}
+
+.dark-mode {
+  // black background.
+  --first-color: #000;
+  --menu-link-color: white;
+  // For black background, blue text.
+  --first-text-color: #fafafa;
+  --scroll-color: #36d1dc;
+  --utility-color: linear-gradient( 135deg,#36d1dc 0%,#5b86e5 100%);
+  // dark background.
+  --second-color: linear-gradient( 135deg,#36d1dc 0%,#5b86e5 100%);
+  // For dark background, white text.
+  --second-text-color: #fafafa;
+}
+
+
